@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Grocery shopping calculator app</title>
+    <meta lang="en">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="app.js" async></script>
+
+</head>
+
+<body>
+
+    <header id="headings">
+        <h1 class="title">My local market calculator</h1>
+    </header>
+
+    <div id="container">
+        <fieldset id="fruits" class="item">
+            <label for="fruit">Enter fruit or vegetable</label>
+            <input id="fruit" type="text" placeholder="banana">
+            <p class="hidden error-fruit">Please enter a fruit</p>
+            <label for="weight-fruit">Enter weight</label>
+            <input id="weight-fruit" type="text" placeholder="weight per pound">
+            <p class="hidden error-weight-fruit">Please enter weight</p>
+            <label for="total-fruits">Price ingredient</label>
+            <input id="total-fruits" type="text">
+            <button id="cart-fruit" onclick="addToCartFruit()">Add to cart</button>  
+        </fieldset>
+    
+
+        <div id="total" class="item">
+            <h1 class="bill">Bill</h1>
+            <div class="multi-columns"></div>
+            <h2>Total: $CAN <span id="total-cost"></span></h2>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

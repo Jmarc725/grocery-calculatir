@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(images/plants-lg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+#container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.item {
+    /* flex-grow: 1;
+    flex-basis: 250px; */
+    margin: 2rem 1rem 0;
+    border-radius: 10px;
+    border: 1px solid grey;
+    opacity: 0.7;
+    padding: 2rem;
+    box-shadow: 2px 2px 13px;
+}
+
+h1, .title {
+    font-size: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 4rem;   
+    text-align: center;
+}
+
+.title {
+    color:rgb(100, 69, 10);
+}
+
+h1 {
+    color: rgb(78, 146, 211);
+}
+
+#fruits {
+    background-color: rgb(224, 175, 67);
+}
+
+#vegetables {
+    background-color: lightgreen;
+}
+
+#meats {
+    background-color: lightsalmon;
+}
+
+label, input, button {
+    display: block;
+    font-size: 1.2rem;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+}
+
+input {
+    margin-bottom: O.5rem;
+    padding-left: 1rem;
+    width: 95%;
+    height: 50px;
+    border: 1px solid grey;
+}
+
+button {
+    background-color: rgb(78, 146, 211);
+    padding: 1rem 2rem; 
+    margin-top: 4rem;
+    color: white;
+    width: 100%;
+    border: 1px solid white;
+}
+
+input, button {
+    border-radius: 5px;
+}
+
+#total {
+    padding:2rem;
+    margin-top: 2rem;
+    background-color: lightyellow;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    color:black;
+    padding: 1rem;
+    border-top: 0.5px solid grey;
+}
+
+#total-cost {
+    font-size: 1.5rem;
+    text-align: center;
+    color:rgb(78, 146, 211);
+}
+
+.error-fruit, .error-vegetable, .error-meat,
+.error-weight-fruit, .error-weight-vegetable, .error-weight-meat {
+    color: red;
+    font-size: 0.8rem;
+    text-align: right;
+}
+
+.hidden {
+    display: none;
+}
+
+#total p {
+    margin-bottom: 0;
+    margin-top: 0.4rem;
+}
+
+.multi-columns {
+    /* display: flex;
+    flex-wrap: wrap; */
+    text-align: center;
+}
+
+.price-bold {
+    font-weight: 700;
+}
+
+/* .multi-columns p {
+    flex-grow: 1;
+    flex-basis: 350px;
+} */
+
+
+@media screen and (min-width: 778px){
+
+    #container {
+        display: flex;
+        justify-content: space-evenly;  
+        width: 80%;
+    }
+
+.item {
+    width: 100%;
+}
+}
+
+
+@media screen and (min-width: 1024px){
+
+	#container {
+		max-width: 1200px;
+	}
+}
